@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('/public/fonts/Montserrat-ExtraBold.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('/public/fonts/Montserrat-Medium.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/public/fonts/Montserrat-Regular.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont-ExtraLight';
+    src: url('/public/fonts/Mont-ExtraLight.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('/public/fonts/Mont-Regular.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont-SemiBold';
+    src: url('/public/fonts/Mont-SemiBold.woff');
+    font-style: normal;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Montserrat-ExtraBold';
+}
+
+h5{
+    font-family: 'Montserrat-Regular';
+}
+
+p{
+    font-family: 'Mont-Regular';
+}
+
+.slider .slick-slide {
+    margin: 0 27px;
+}
+
+.slider .slick-list {
+    margin: 0 -27px;
+}
+
+.slider-reviews .slick-slide {
+    margin: 0 15px;
+}
+
+.slider-reviews .slick-list {
+    margin: 0 -15px;
+}
+
+.slider-category .slick-current.slick-active{
+    background-color: #ECEEF0;
+}
+
+.bg-header{
+    background: linear-gradient(90deg, rgba(255,255,255,0.3170518207282913) 0%, rgba(255,255,255,0.7792366946778712) 66%, rgba(255,255,255,1) 100%);
+}
+
+.bs1{
+    box-shadow: 0px 7px 6px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 7px 6px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 7px 6px 0px rgba(0,0,0,0.25);
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.tranding-slide-img{
+    /* width: 600px;     */
+}
+
+.swiper-slide-active .tranding-slide-img img {
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    opacity: 1 !important;
+    filter: contrast(1) !important;
+}
+
+.swiper-slide .tranding-slide-img img {
+    filter: contrast(0.5);
+}
+
+.swiper-slide{
+    transition: 1s all linear;
+}
+
+.profile-img-section{
+    background: rgba(255, 255, 255, 0.634);
+}
+
+.profile-section:hover .profile-img-section{
+    background: linear-gradient(0deg, #fd8d05f0 10.62%, rgba(253, 140, 5, 0) 80%);
+    transition: 500ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-section{
+    overflow: hidden;
+}
+
+.profile-section:hover img{
+    scale: 1.01;
+}
+
+.profile-det-img-section{
+    background: linear-gradient(0deg, #444444 -7.51%, rgba(253, 140, 5, 0) 100%);
+}
+
+.profile-content p{
+    font-family: 'Mont-Regular';
+    font-size: 16px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.profile-content h4{
+    font-family: 'Mont-SemiBold';
+    font-size: 19px;
+    color: #FFAF08;
+}
+
+.profile-content ul li{
+    list-style: disc;
+    color: white;
+    font-family: 'Mont-Regular';
+    margin-bottom: 1rem;
+}
+
+.bg-top-choose{
+    background: linear-gradient(0deg, #FD8C05 10.62%, rgba(253, 140, 5, 0) 100%);
+}
+
+.bg-p{
+    background: linear-gradient(0deg, #FD8C05 10.62%, rgba(253, 140, 5, 0) 100%);
+}
+
+.product-content p{
+    font-family: 'Mont-Regular';
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 1rem;
+}
+
+.navbar{
+    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.navbar.active{
+    left: 0;
+}
+
+.bs {
+    box-shadow : inset 0 -1px 0 0 #eaeaea;
+}
+.sub-nav{
+    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.sub-nav.active{
+    display: block;
+}
+
+.swiper {
+    width: 100vw;
+    height: 400px;
+}
+
+@media (max-width:999px) {
+    .swiper {
+        height: 200px;
+    }
+}
+
+
+.tranding-slide {
+    width: 550px;
+    /* height: 30px; */
+    position: relative;
+}
+
+
+.tranding-slide .tranding-slide-img img {
+    width: 640px;
+    height: 400px;
+    height: 350px;
+    opacity: .6 !important;
+    object-fit: cover;
+}
+
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper-slide-active .tranding-slide-img img {
+        border-top-right-radius: 65px !important;
+        border-bottom-left-radius: 65px !important;
+        opacity: 1 !important;
+        filter: contrast(1) !important;
+    }
+    
+    .swiper-slide .tranding-slide-img img {
+        filter: contrast(0.5);
+    }
+}
