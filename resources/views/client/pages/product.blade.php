@@ -11,7 +11,10 @@
         <div class="bg-p absolute top-0 left-0 w-full h-full"></div>
         <div class="absolute top-0 left-0 p-10 w-full flex justify-center "> 
             <img src="{{asset('images/pr1.png')}}" class=" object-contain"/>
-            <div class="border-[8px] border-white bg-[#FD8C05] w-[145px] h-[145px] rounded-full absolute top-[50%] translate-y-[-50%] right-[-40px]"><div></div></div>
+            <div class="border-[8px] p-4 border-white bg-[#FD8C05] w-[145px] h-[145px] rounded-full absolute top-[50%] translate-y-[-50%] right-[-40px] flex flex-col justify-center items-center">
+                <div class="font-montserratExtraBold text-white text-[28px]">45+</div>
+                <div class="font-montserratRegular text-white text-xs text-center">lorem ipsum ipsum ipsum</div>
+            </div>
         </div>
     </div>
     <div class="w-full block lg:hidden px-0 py-[30px] lg:p-32">

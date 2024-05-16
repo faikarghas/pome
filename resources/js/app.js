@@ -50,3 +50,25 @@ $('.navbar-action').on('click',function name() {
 $('.sub-action').on('click',function name() {
   $('.sub-nav').toggleClass('active')
 })
+
+$(window).scroll(function() {
+  const currentScrollTop = $(this).scrollTop();
+  const lastScrollTop = $(this).data('lastScrollTop');
+
+  let scrollDirection;
+  if (currentScrollTop > lastScrollTop) {
+    scrollDirection = 'down';
+  } else if (currentScrollTop < lastScrollTop) {
+    scrollDirection = 'up';
+  } else {
+    scrollDirection = 'none'; // No change
+  }
+
+  if (scrollDirection == 'down') {
+    $('header').hide()
+  } else {
+    $('header').show()
+  }
+
+  $(this).data('lastScrollTop', currentScrollTop); 
+});

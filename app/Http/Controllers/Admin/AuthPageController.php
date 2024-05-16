@@ -51,10 +51,15 @@ class AuthPageController extends Controller
         }
 
         $data = [
-         
+            'listProduct' => $this->listProduct()
         ];
 
         return view('admin.pages.auth.login',$data);
+    }
+
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/');
     }
 
     /**

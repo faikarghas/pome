@@ -23,6 +23,7 @@ use App\Http\Middleware\RedirectIfNotAuthenticated;
 
 Route::get('/register',[AuthPageController::class,'register'])->name('register');
 Route::get('/login/{token}',[AuthPageController::class,'login'])->name('login');
+Route::post('/logout',[AuthPageController::class,'logout'])->name('logout');
 
 Route::post('/auth/email/register',[AuthPageController::class,'actionRegister'])->name('storeRegister');
 Route::post('/auth/email/login',[AuthPageController::class,'actionLogin'])->name('storeLogin');
